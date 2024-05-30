@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="contact.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index3.css">
+    <title>OM STYLES</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><h1>OM Styles</h1></div>
+        <ul class="menu">
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">New Arrivals</a></li>
+            <li><a href="">Fashion</a></li>
+            <li><a href="">Account</a></li>
+            <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+    <section class="content">
+        <h1>New Arrivals For Men & Women</h1>
+        <p>Get The Best Fashion Arrivals</p>
+        <button>Shop Now</button>
+    </section>
+    <h1 class="pheading">Our Latest Products</h1>
+    <section class="sec">
+        <div class="products">
+            <!-- Product cards go here -->
+            <div class="card">
+                <div class="img"><img src="/home/ram/MainFlow/task_3/1 .png" alt=""></div>
+                <div class="desc">Women</div>
+                <div class="title">Shein clasi neck fit Dress</div>
+                <div class="box">
+                    <div class="price">Rs1129</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="/home/ram/MainFlow/task_3/2.png" alt=""></div>
+                <div class="desc">Men</div>
+                <div class="title">Stylish blazzer</div>
+                <div class="box">
+                    <div class="price">Rs1999</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="/home/ram/MainFlow/task_3/3.png" alt=""></div>
+                <div class="desc">Men</div>
+                <div class="title">Casual Sneakers</div>
+                <div class="box">
+                    <div class="price">Rs1499</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="/home/ram/MainFlow/task_3/4.png" alt=""></div>
+                <div class="desc">Women</div>
+                <div class="title">Chic Leather Bag</div>
+                <div class="box">
+                    <div class="price">Rs3199</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="/home/ram/MainFlow/task_3/5.png" alt=""></div>
+                <div class="desc">Men</div>
+                <div class="title">Quartz wrist watch</div>
+                <div class="box">
+                    <div class="price">Rs1599</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="/home/ram/MainFlow/task_3/6.png" alt=""></div>
+                <div class="desc">Women</div>
+                <div class="title">Sandles</div>
+                <div class="box">
+                    <div class="price">Rs1130</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="/home/ram/MainFlow/task_3/7.png" alt=""></div>
+                <div class="desc">Men</div>
+                <div class="title">Stylish Tshirt</div>
+                <div class="box">
+                    <div class="price">Rs899</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="/home/ram/MainFlow/task_3/8.png" alt=""></div>
+                <div class="desc">Men & Women</div>
+                <div class="title">Festive wear</div>
+                <div class="box">
+                    <div class="price">Rs4590</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-form">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="query">Query:</label>
+            <textarea id="query" name="query" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formMessage" class="form-message"></p>
+    </section>
+    <footer>
+        <p>Copyrights at<a href=""> OM styles</a></p>
+    </footer>
+    <script>
+        $(".menu-btn").click(function(){
+            $(".navbar .menu").toggleClass("active");
+            $(".menu-btn i").toggleClass("active");
+        })
+    </script>
+</body>
+</html>
