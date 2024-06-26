@@ -1,0 +1,105 @@
+/* src/Calculator.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .calculator {
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .display {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .display input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 30px;
+    padding: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    background: #e0f7fa;
+  }
+  
+  .result {
+    height: 40px;
+    text-align: right;
+    font-size: 24px;
+    color: #888;
+    padding-right: 10px;
+    background: #e0f7fa;
+    border-radius: 10px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .buttons button {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #f1f1f1;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .buttons button:hover {
+    background: #d3d3d3;
+  }
+  
+  .buttons button:active {
+    background: #ccc;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .buttons button.clear {
+    grid-column: span 2; /* Adjusting the width to span two columns */
+    background: #ff6b6b;
+    color: #fff;
+  }
+  
+  .buttons button.clear:hover {
+    background: #e06666;
+  }
+  
+  .buttons button.symbol {
+    background: #4caf50;
+    color: #fff;
+  }
+  
+  .buttons button.symbol:hover {
+    background: #43a047;
+  }
+  
+  .buttons button.equals {
+    background: #ffb74d;
+    color: #fff;
+  }
+  
+  .buttons button.equals:hover {
+    background: #ffa726;
+  }
+  
